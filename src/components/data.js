@@ -1,4 +1,3 @@
-import { jsx } from "react/jsx-runtime";
 import person1 from "../../public/person1.png";
 import person2 from "../../public/person2.png";
 import person3 from "../../public/person3.png";
@@ -32,8 +31,8 @@ export const Examples = {
     title: "Components",
     description: "A component is a reusable piece of UI in React.",
     code: `function Welcome() {
-  return <h1>Hello, World!</h1>;
-}`,
+      return <h1>Hello, World!</h1>;
+    }`,
   },
   Jsx: {
     title: "JSX",
@@ -44,15 +43,17 @@ export const Examples = {
     title: "Props",
     description: "Props allow components to receive data from their parent.",
     code: `function Greeting(props) {
-  return <h1>Hello, {props.name}!</h1>;
-}`,
+      return <h1>Hello, {props.name}!</h1>;
+    }`,
   },
   State: {
     title: "State",
     description: "State allows components to manage dynamic data.",
-    code: `function Counter() {
-  const [count, setCount] = useState(0);
-  return <button onClick={() => setCount(count + 1)}>Count: {count}</button>;
-}`,
+    code: `import { useState } from "react";
+    function Counter() {
+      const [count, setCount] = useState(0);
+      return <button onClick={() => setCount(count + 1)}>Count: {count}</button>;
+    }`,
   },
 };
+

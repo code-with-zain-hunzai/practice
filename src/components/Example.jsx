@@ -16,25 +16,25 @@ export default function Example() {
         <div className="flex flex-wrap justify-center gap-4 pb-10">
           <TabButton
             isSelect={selectedTopic === "Components"}
-            onSelect={() => handleSelect("Components")}
+            onClick={() => handleSelect("Components")}
           >
             Components
           </TabButton>
           <TabButton
             isSelect={selectedTopic === "Jsx"}
-            onSelect={() => handleSelect("Jsx")}
+            onClick={() => handleSelect("Jsx")}
           >
             Jsx
           </TabButton>
           <TabButton
             isSelect={selectedTopic === "State"}
-            onSelect={() => handleSelect("State")}
+            onClick={() => handleSelect("State")}
           >
             State
           </TabButton>
           <TabButton
             isSelect={selectedTopic === "Props"}
-            onSelect={() => handleSelect("Props")}
+            onClick={() => handleSelect("Props")}
           >
             Props
           </TabButton>
